@@ -97,3 +97,86 @@ Escreva a função `contar_palavras(texto: str) -> dict[str, int]` que conta qua
 - [ ] Usa `dict` ou `collections.Counter` para as contagens
 - [ ] Ordena as palavras com `sorted` antes de imprimir
 - [ ] Tem ao menos um teste com `pytest` validando a contagem
+
+## Exercício 06 - Pirâmide de Asteriscos
+
+**Nível:** iniciante
+
+**Objetivo:** Praticar laços aninhados.
+
+**Instrução:**
+Escreva a função `piramide(altura: int) -> None` que imprime uma pirâmide de asteriscos centralizada com a altura informada. Para `altura = 4`:
+
+```
+   *
+  ***
+ *****
+*******
+```
+
+**Critérios de sucesso:**
+
+- [ ] Usa dois laços `for` aninhados (um para as linhas, outro para os caracteres de cada linha)
+- [ ] A pirâmide fica centralizada (espaços à esquerda calculados a partir da altura)
+- [ ] Funciona para qualquer `altura` positiva, não só para 4
+
+## Exercício 07 - Número Primo, Perfeito ou Nenhum dos Dois
+
+**Nível:** iniciante
+
+**Objetivo:** Praticar condicionais, laços e funções, com um pouco de teoria dos números.
+
+**Instrução:**
+Escreva duas funções: `eh_primo(numero: int) -> bool` (retorna `True` se o número só é divisível por 1 e por ele mesmo) e `eh_perfeito(numero: int) -> bool` (retorna `True` se a soma de todos os divisores do número, exceto ele mesmo, é igual ao próprio número - por exemplo, 28 é perfeito porque 1 + 2 + 4 + 7 + 14 = 28). Depois, para os números de 1 a 50, imprima se cada um é primo, perfeito, os dois, ou nenhum.
+
+**Critérios de sucesso:**
+
+- [ ] `eh_primo` não precisa testar divisores maiores que a raiz quadrada do número
+- [ ] `eh_perfeito` não conta o próprio número como divisor de si mesmo
+- [ ] O programa cobre os casos especiais 0 e 1 corretamente (nenhum dos dois é primo)
+
+## Exercício 08 - Anagrama e Palíndromo
+
+**Nível:** iniciante
+
+**Objetivo:** Praticar manipulação de strings.
+
+**Instrução:**
+Escreva `sao_anagramas(a: str, b: str) -> bool` (retorna `True` se uma palavra é formada pelas mesmas letras da outra, em qualquer ordem, ignorando maiúsculas/minúsculas e espaços) e `eh_palindromo(texto: str) -> bool` (retorna `True` se o texto é igual lido de trás para frente, ignorando espaços, acentos e maiúsculas/minúsculas).
+
+**Critérios de sucesso:**
+
+- [ ] `sao_anagramas("Roma", "Amor")` retorna `True`
+- [ ] `eh_palindromo("arara")` e `eh_palindromo("A base do teto desaba")` retornam `True`
+- [ ] Usa fatiamento (`[::-1]`) ou `sorted()` em vez de reimplementar a comparação na mão
+
+## Exercício 09 - Hierarquia de Animais
+
+**Nível:** intermediário
+
+**Objetivo:** Praticar herança e polimorfismo.
+
+**Instrução:**
+Crie uma classe base `Animal` com atributo `nome` e método `emitir_som() -> str` (retorna `"..."` por padrão). Crie as classes `Cachorro` e `Gato`, herdando de `Animal`, cada uma sobrescrevendo `emitir_som()` com seu próprio som. Escreva uma função `apresentar(animais: list[Animal]) -> None` que percorre uma lista de animais de tipos diferentes e imprime o som de cada um, sem precisar checar o tipo de cada animal com `if`.
+
+**Critérios de sucesso:**
+
+- [ ] `Cachorro` e `Gato` herdam de `Animal` com `class Cachorro(Animal):`
+- [ ] `apresentar` funciona com uma lista que mistura `Cachorro` e `Gato`, sem nenhum `isinstance`/`if` checando o tipo
+- [ ] Adicionar um terceiro animal (`Pato`, por exemplo) não exige mudar nada em `apresentar`
+
+## Exercício 10 - Decorator Cronômetro
+
+**Nível:** intermediário
+
+**Objetivo:** Praticar decorators e closures.
+
+**Instrução:**
+Escreva um decorator `cronometrar` que, aplicado a qualquer função, imprime quanto tempo ela levou para executar, sem alterar o valor que a função retorna. Use-o para medir uma função que soma os números de 1 a 10 milhões.
+
+**Critérios de sucesso:**
+
+- [ ] O decorator funciona com `@cronometrar` acima da função, sem parênteses
+- [ ] Funciona com funções que recebem qualquer quantidade de argumentos (`*args`, `**kwargs`)
+- [ ] Usa `functools.wraps` para preservar o nome original da função decorada
+- [ ] A função decorada continua retornando seu valor normalmente (o decorator só adiciona a medição)
