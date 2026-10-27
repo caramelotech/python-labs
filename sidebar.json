@@ -9,6 +9,10 @@
       "directory": "fundamentos"
     },
     {
+      "label": "Python",
+      "directory": "python"
+    },
+    {
       "label": "Prática",
       "directory": "pratica"
     },

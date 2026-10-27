@@ -5,6 +5,7 @@ Base de conhecimento sobre **Python** do Caramelo Tech - uma linguagem fácil de
 ## O que você vai encontrar
 
 - **Fundamentos** - seus primeiros passos com Python: preparar o ambiente, entender o que é a linguagem e escrever os primeiros programas. É por aqui que se começa.
+- **Python** - a linguagem a fundo: estruturas de dados, orientação a objetos, type hints, exceções, iteradores e geradores, decorators, concorrência e biblioteca padrão.
 - **Prática** - exercícios e projetos para colocar a mão no código e fixar o que foi estudado.
 - **Roadmap** - a trilha de estudos de Python com foco em backend, do primeiro programa à produção, para você saber o que estudar e em que ordem.
 - **Recursos** - materiais externos para aprofundar cada assunto.

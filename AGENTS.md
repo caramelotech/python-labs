@@ -18,11 +18,12 @@ Veja o [README.md](README.md) para a visão geral do repositório.
 Cada pasta em `notes/` é uma seção do site, com um escopo próprio. Use o escopo para decidir onde uma nota nova entra. A ideia é não manter uma lista de tópicos por pasta aqui nem no `index.md` - ao adicionar conteúdo dentro de um escopo já descrito, esses arquivos não precisam mudar.
 
 - **`fundamentos/`** - primeiros passos com Python: instalar e configurar o ambiente (Python, ambientes virtuais, gerenciador de pacotes), entender o que é a linguagem e escrever os primeiros programas (sintaxe, tipos, funções, controle de fluxo, módulos). Para quem nunca programou em Python.
+- **`python/`** - a linguagem a fundo: estruturas de dados, orientação a objetos, exceções, type hints, iteradores e geradores, decorators, concorrência com threads/processos/asyncio e biblioteca padrão. Para quem já escreve programas básicos e quer ir além do essencial.
 - **`pratica/`** - exercícios (`01-exercicios.md`) e projetos (`02-projetos.md`) para aplicar o conteúdo do lab.
 - **`roadmap.md`** (nota solta) - trilha de estudos de Python, do primeiro programa à produção. É um guia de percurso, mantido à parte e independente da cobertura atual das notas.
 - **`recursos.md`** (nota solta) - materiais externos para aprofundar (livros, cursos, documentação, comunidades).
 
-Seções futuras previstas no roadmap (criar quando houver material para 2-3 notas): `python/` (a linguagem a fundo: estruturas de dados, orientação a objetos, type hints, exceções, iteradores e geradores, decorators, concorrência com threads, processos e asyncio, biblioteca padrão) e `backend/` (APIs com FastAPI e Django, banco de dados com SQLAlchemy, testes com pytest, observabilidade e deploy). Análise e engenharia de dados ficam no `data-labs`.
+Seção futura prevista no roadmap (criar quando houver material para 2-3 notas): `backend/` (APIs com FastAPI e Django, banco de dados com SQLAlchemy, testes com pytest, observabilidade e deploy). Análise e engenharia de dados ficam no `data-labs`.
 
 ## Tarefas Comuns
 
